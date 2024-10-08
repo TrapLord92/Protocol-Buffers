@@ -1,9 +1,0 @@
-syntax ="proto3"; //version of proto
-
-
-/*messae to be exchange in the code*/message Mymessage {
-    /*message has fields id,firstname,lastname in proto field{for each field you gonna have a field type it can be string ,int32 ,bool etc..} is like variables in others programm languages*/
-    int32 id =1;
-  /*field type +> string*/  string first_name=/*field tag or field number*/2; /* message is like a field identifier. It uniquely identifies each field in the serialized message, ensuring that when the message is encoded or decoded, each field's data can be correctly associated with its original field, even if the message structure changes or evolves over time*/
-    string /*field name => lastname*/last_name=3;
-}
